@@ -1,4 +1,4 @@
 wenkangzhou.github.com
 ======================
 
-just a test.
+http://yiquwei.com/

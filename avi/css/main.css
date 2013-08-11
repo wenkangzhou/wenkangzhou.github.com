@@ -19,6 +19,20 @@ a {
 .clear{
 	clear: both;
 }
+/*解决手机点击成方块的效果*/
+a:hover{
+    -webkit-transition: 0.4s;
+     transition: 0.4s;
+     opacity: 0.8;
+    -moz-opacity: 0.8;
+     filter:alpha(opacity=8);
+}
+*, ::after, ::before {
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+}
 /*index*/
 #header {
 	position:absolute; 
@@ -285,7 +299,7 @@ a {
 .head_sub_tab li {
 	color: #595959;
 	float: left;
-	width: 33.33%;
+	width: 33.33333%;
 }
 .head_sub_tab li a {
 	display: block;
@@ -311,10 +325,10 @@ a {
 	margin-top: 34px;
 }
 #search {
-	height: 30px;
+	/*height: 30px;*/
 }
 #search .search_inp_text {
-	height: 30px;
+	/*height: 30px;*/
 	border-radius: 3px;
 	width: 96%;
 	margin: -4px 2%;
@@ -421,7 +435,7 @@ a {
 }
 .info-guess li {
 	float: left;
-	width: 23%;
+	width: 18%;
 	height: 90px;
 	margin: 10px auto !important;
 	border-bottom: 1px solid #c4df9b;

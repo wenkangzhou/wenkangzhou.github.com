@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>搜索页</title>
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+
+<div id="header">
+	<div id="search">
+		<div class="search_inp_text">
+			<input type="text" id="search-text" class="search_inp_text-input" placeholder="从10万款应用中搜索">
+			<input type="submit" class="search_inp_text-btn"  value="">
+		</div>
+	</div>
+</div>
+
+<div id="wrapper">
+	<div id="scroller">
+		<!-- 搜索结果列表列表 -->
+		<ul id="thelist">
+			<li>1.游戏</li>
+			<li>2.新浪微博</li>
+			<li>3.单机游戏</li>
+			<li>4.微信</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/initScroll.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/message.js" defer></script>
+<!-- <script type="text/javascript" src='js/bottom.js'></script> 底部菜单-->
+<script type="text/javascript">
+
+/*下载按钮点击事件绑定*/
+$(".down-btn").bind('click', function(){
+  //   var score = $(this).attr("data-source");
+  //   dhtmlx.confirm("下载此视频需要150积分，确认下载", function(result){
+		// if(result==true){
+		// 	dhtmlx.alert("对不起，您的积分不足，请到商城下载游戏获取积分。",function(result){
+		// 		if(result==true){
+		// 			window.location.href = "http://www.baidu.com";
+		// 		}
+		// 	});
+		// }
+  //   });
+});
+/*点击进入明细 事件绑定*/
+$(".items-info").bind('click', function(){
+	var id = $(this).attr("data-id");
+	// window.localStorage.setItem("market_info.html","market_info.html?id=" + id);
+	// window.location.href="market_info.html";
+});
+/*搜索按钮事件绑定*/
+$(".search_inp_text-btn").bind('click', function(){
+	var key = $("#search-text").val();
+	if(key == ""){
+		dhtmlx.alert("请输入搜索内容");
+	}
+	// $("#scroller").html();
+});
+	
+</script>
+</body>
+</html>

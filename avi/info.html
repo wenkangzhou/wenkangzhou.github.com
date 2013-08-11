@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>应用详情</title>
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+
+<div id="header">
+	<div class="head_left"><img src="img/logo.png"></div>
+	<span id="head_title">应用详情</span>
+	<div class="head_right"><a href="javascript:window.location.href='search.html'"><img src="img/search.png"></a></div>
+
+</div>
+
+<div id="wrapper">
+	<div id="scroller">
+
+		<div class="info-header">
+			<img class="info-img" src="img/info_001.jpg" alt="天猫">
+			<div class="info-info">
+				<span class="info-title">天猫</span>
+				<p class="info-size">3.32M</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- 滚动条 -->
+		<div id='mySwipe' class='swipe'>
+			<div class='swipe-wrap' id="swipe-wrap">
+				<div><img src="img/default_0.png"></div>
+			</div>
+		</div>
+		<!-- 简介 -->
+		<div class="info-brief">
+			<div class="info-brief-title">应用描述</div>
+			<div class="info-brief-info">
+				阿里巴巴集团旗下天猫官方正品应用（http://www.tmall.com）<br>
+				[软件介绍]<br>
+				天猫（淘宝商城）客户端,品质共享为你而变.<br>
+				不同于传统网购应用的商品组合与展示,独特的天猫网购体验,让你畅享购物的乐趣.<br>
+				最贴心的精品推荐,帮助你发现并收藏感兴趣的宝贝.<br>
+				方便的类目导航和精准搜索功能,轻松地在7万品牌中定位心仪宝贝,享受购物生活.<br>
+				汇聚时尚性感,搭载潮流品质.在天猫,随时,随地,随心网购.<br>
+				[功能说明]<br>
+				-  全面支持Android 4.0<br>
+				-  不同于传统网购应用的商品组合,流畅的浏览主题化的精品商品<br>
+				-  不同于传统网购应用的商品展示,便捷地查看商品详情,评价,服务保障信息<br>
+				-  最贴心的精品推荐,搭配天猫最优惠的精品活动,帮助你发现并选购感兴趣的宝贝<br>
+				-  方便的类目导航功能,让“逛”成为一种享受<br>
+				-  精准的搜索筛选功能,商品再多也能轻松“购”<br>
+				-  我的喜欢,购物车功能,随心管理心仪商品<br>
+				-  订单管理,收货地址管理功能,随时随地掌握订单状态<br>
+				-  正品保证,提供发票,天猫客户端,品质共享为你而变<br>
+				-  精品推荐每日推送,天猫正品搜索Widget,桌面直达<br>
+				适配固件：2.1+及以上版本<br>
+				[官方微博,QQ群]<br>
+				关注我们新浪,腾讯微博： @天猫无线<br>
+				官方QQ交流群：132521057<br>
+				[官方网站]<br>
+				http://mobile.tmall.com
+			</div>
+			<div class="info-brief-toggle"><span>展开</span></div>
+		</div>
+		<div class="info-brief-title">猜你喜欢</div>
+		<ul class="info-guess">
+			<li>
+				<a href="#">
+					<img src="img/guess_demo.png">
+					<span>京东</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/guess_demo.png">
+					<span>京东</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/guess_demo.png">
+					<span>京东</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/guess_demo.png">
+					<span>京东</span>
+				</a>
+			</li>
+			<div class="clear"></div>
+		</ul>
+		
+	</div>
+</div>
+<div id="footer">
+	<span class="footer-down-btn" data-id="20">安装</span>
+</div>
+
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/initScroll.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/message.js" defer></script>
+<script type="text/javascript" src='js/swipe.js'></script>
+<script type="text/javascript">
+
+/*安装按钮事件绑定*/
+$(".footer-down-btn").bind('click', function(){
+	var id = $(this).attr("data-id");
+
+});
+/*展开 收起*/
+$(".info-brief-toggle").bind('click', function(){
+	$(".info-brief-toggle span").toggleClass("up");
+	if($(".info-brief-toggle span").hasClass("up")==true){
+		$(".info-brief-toggle span").html("收起");
+		$(".info-brief-info").height("auto");
+	}else{
+		$(".info-brief-toggle span").html("展开");
+		$(".info-brief-info").height("110px");
+	}
+});
+/*匿名函数-初始化滚动条-暂时放这*/
+(function (){
+	$("#swipe-wrap").html("");
+	for(var j = 0 ;j < 3;j++){
+		$("#swipe-wrap").append("<div ><a href=\"javascript:void(0)\"><img width=\""+$(window).width()+"\" height=\"120\" style=\"display: block;\" src=\"img/default_"+j+".png\" /></a></div>");
+		if(j == 2){
+			var elem = document.getElementById('mySwipe');
+			var mySwipe = Swipe(elem, {
+			  	 //auto: 3000,
+			  	 //continuous: true
+				});
+		}
+	};
+}())
+	
+</script>
+</body>
+</html>

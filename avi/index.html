@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>主页</title>
+<link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+
+<div id="header">
+	<div class="head_left"><img src="img/logo.png"></div>
+	<span id="head_title">XX市场</span>
+	<div class="head_right"><a href="javascript:window.location.href='search.html'"><img src="img/search.png"></a></div>
+
+</div>
+
+<div id="wrapper">
+	<div id="scroller">
+		<!-- 滚动条 -->
+		<div id='mySwipe' class='swipe'>
+			<div class='swipe-wrap' id="swipe-wrap">
+				<div><img src="img/default_0.png"></div>
+			</div>
+		</div>
+		<!-- 下载列表 -->
+		<ul id="thelist">
+			<li>
+				<div class="items-info" data-id="1">
+					<div class="itmes-icon">
+						<img src="img/demo.png" >
+					</div>
+					<div class="items-title">demo(需120积分)</div>
+					<div class="items-score">
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+					</div>
+					<div class="items-size">2.23M</div>
+				</div>
+				<a class="down-btn" href="#1" data-source="20">下载</a>
+				
+			</li>
+			<li>
+				<div class="items-info" data-id="2">
+					<div class="itmes-icon">
+						<img src="img/demo.png" >
+					</div>				
+					<div class="items-title">demo(需170积分)</div>
+					<div class="items-score">
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+						<img src="img/star.png" >
+					</div>
+					<div class="items-size">2.24M</div>
+				</div>
+				<a class="down-btn" href="#2" data-source="30">开始</a>
+				
+			</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+			<li>demo</li>
+		</ul>
+	</div>
+</div>
+<div id="footer">
+	<a href="index.html" class="on"><span class="foot-item icon_home"></span>首页</a>
+	<a href="application.html" class=""><span class="foot-item icon_shop"></span>应用</a>
+	<a href="games.html" class=""><span class="foot-item icon_set"></span>游戏</a>
+</div>
+
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/initScroll.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/message.js" defer></script>
+<script type="text/javascript" src='js/swipe.js'></script>
+<!-- <script type="text/javascript" src='js/bottom.js'></script> 底部菜单-->
+<script type="text/javascript">
+
+/*下载按钮点击事件绑定*/
+$(".down-btn").bind('click', function(){
+  //   var score = $(this).attr("data-source");
+  //   dhtmlx.confirm("下载此视频需要150积分，确认下载", function(result){
+		// if(result==true){
+		// 	dhtmlx.alert("对不起，您的积分不足，请到商城下载游戏获取积分。",function(result){
+		// 		if(result==true){
+		// 			window.location.href = "http://www.baidu.com";
+		// 		}
+		// 	});
+		// }
+  //   });
+});
+/*点击进入明细 事件绑定*/
+$(".items-info").bind('click', function(){
+	var id = $(this).attr("data-id");
+	window.localStorage.setItem("info.html","info.html?id=" + id);
+	window.location.href="info.html";
+});
+/*匿名函数-初始化滚动条-暂时放这*/
+(function (){
+	$("#swipe-wrap").html("");
+	for(var j = 0 ;j < 3;j++){
+		$("#swipe-wrap").append("<div ><a href=\"javascript:void(0)\"><img width=\""+$(window).width()+"\" height=\"120\" style=\"display: block;\" src=\"img/default_"+j+".png\" /></a></div>");
+		if(j == 2){
+			var elem = document.getElementById('mySwipe');
+			var mySwipe = Swipe(elem, {
+			  	 auto: 3000,
+			  	 continuous: true
+				});
+		}
+	};
+}())
+	
+</script>
+</body>
+</html>

@@ -37,7 +37,7 @@
 		<!-- 简介 -->
 		<div class="info-brief">
 			<div class="info-brief-title">应用描述</div>
-			<div class="info-brief-info">
+			<div class="info-brief-info" style="height:auto;">
 				阿里巴巴集团旗下天猫官方正品应用（http://www.tmall.com）<br>
 				[软件介绍]<br>
 				天猫（淘宝商城）客户端,品质共享为你而变.<br>
@@ -63,7 +63,7 @@
 				[官方网站]<br>
 				http://mobile.tmall.com
 			</div>
-			<div class="info-brief-toggle"><span>展开</span></div>
+			<!-- <div class="info-brief-toggle"><span>展开</span></div> -->
 		</div>
 		<div class="info-brief-title">猜你喜欢</div>
 		<ul class="info-guess">
@@ -93,7 +93,7 @@
 			</li>
 			<div class="clear"></div>
 		</ul>
-		
+		<div class="info-brief-title"></div>
 	</div>
 </div>
 <div id="footer">
@@ -112,17 +112,17 @@ $(".footer-down-btn").bind('click', function(){
 	var id = $(this).attr("data-id");
 
 });
-/*展开 收起*/
-$(".info-brief-toggle").bind('click', function(){
-	$(".info-brief-toggle span").toggleClass("up");
-	if($(".info-brief-toggle span").hasClass("up")==true){
-		$(".info-brief-toggle span").html("收起");
-		$(".info-brief-info").height("auto");
-	}else{
-		$(".info-brief-toggle span").html("展开");
-		$(".info-brief-info").height("110px");
-	}
-});
+// /*展开 收起*/
+// $(".info-brief-toggle").bind('click', function(){
+// 	$(".info-brief-toggle span").toggleClass("up");
+// 	if($(".info-brief-toggle span").hasClass("up")==true){
+// 		$(".info-brief-toggle span").html("收起");
+// 		$(".info-brief-info").height("auto");
+// 	}else{
+// 		$(".info-brief-toggle span").html("展开");
+// 		$(".info-brief-info").height("110px");
+// 	}
+// });
 /*匿名函数-初始化滚动条-暂时放这*/
 (function (){
 	$("#swipe-wrap").html("");

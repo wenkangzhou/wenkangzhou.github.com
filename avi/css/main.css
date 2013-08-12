@@ -346,7 +346,7 @@ a:hover{
 	right: 2px;
 	top: 9px;
 	border: none;
-	border-left: 1px solid #dbdbdb;
+/*	border-left: 1px solid #dbdbdb;*/
 	cursor: pointer;
 }
 .footer-down-btn{

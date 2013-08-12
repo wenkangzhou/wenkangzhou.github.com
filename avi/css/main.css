@@ -43,17 +43,21 @@ a:hover{
 	height:45px;
 	line-height:45px;
 	background-color:#222;
-	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #96FEAB), color-stop(0.05, #18D536), color-stop(1, #0F7B0A));
 	padding:0;
 	color:#eee;
 	font-size:20px;
 	text-align:center;
 }
-
+#head_title{
+	color: #f3f3f3;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+}
 .head_right {
 	position: absolute;
 	z-index: 3;
-	margin-top: -45px;
+	margin-top: -48px;
 	right: 2px;
 	border: 0;
 	cursor: pointer;
@@ -68,13 +72,16 @@ a:hover{
 	height: 45px;
 }
 .head_left img,.head_right img{
+	padding: 3px;
 	width: 40px;
 	height: 40px;
 }
 #wrapper {
 	position:absolute; 
 	z-index:1;
-	top:45px; bottom:48px; left:0;
+	top:45px; 
+	bottom:48px; 
+	left:0;
 	width:100%;
 	background:#FFF;
 	overflow:auto;
@@ -168,41 +175,28 @@ a:hover{
 	width:100%;
 	height:58px;
 	background-color:#222;
-	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #96FEAB), color-stop(0.05, #18D536), color-stop(1, #0F7B0A));
 	padding:0;
 	border-top:1px solid #444;
 }
-
-#footer a{
-	width: 33%;
-	height: 58px;
-	color: #FFF;
-	font-size: 15px;
-	font-weight: bold;
-	display: block;
-	float: left;
-	text-align: center;
-	cursor: pointer;
-	text-decoration: none;
-	line-height: 90px;
-}
 .foot-item{
-	width: 52px;
-	height: 40px;
+	margin: 3px 1% 3px 1%;
+	float: left;
+	width: 30%;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	text-align: center;
+	height: 52px;
+}
+#footer span img {
+	width: 42px;
+	margin-top: 0px;
+}
+#footer span p {
+	width: 30%;
+	margin-top: 0px;
+	color: #c7c7c7;
 	position: absolute;
-	margin-left: -14px;
-	margin-top: -5px;
-}
-.icon_home{
-	background: url(../img/home_web.png) no-repeat;
-}
-
-.icon_shop{
-	background: url(../img/hot_web.png) no-repeat;
-}
-
-.icon_set{
-	background: url(../img/more_web.png) no-repeat;
 }
 /*弹出框*/
 .dhtmlx_modal_box {
@@ -349,7 +343,7 @@ a:hover{
 	width: 38px;
 	position: absolute;
 	right: 2px;
-	top: 8px;
+	top: 11px;
 	border: none;
 	border-left: 1px solid #dbdbdb;
 	cursor: pointer;

@@ -319,13 +319,14 @@ a:hover{
 	padding: 0 10px;
 }
 #search {
-	/*height: 30px;*/
+	padding: 7px;
+	height: 30px;
 }
 #search .search_inp_text {
-	/*height: 30px;*/
+	height: 30px;
 	border-radius: 3px;
 	width: 96%;
-	margin: -4px 2%;
+	margin: -9px 2%;
 	position: relative;
 }
 #search .search_inp_text-input {
@@ -343,7 +344,7 @@ a:hover{
 	width: 38px;
 	position: absolute;
 	right: 2px;
-	top: 11px;
+	top: 10px;
 	border: none;
 	border-left: 1px solid #dbdbdb;
 	cursor: pointer;

@@ -339,12 +339,12 @@ a:hover{
 	border-radius: 3px;
 }
 #search .search_inp_text-btn {
-	background: url(../img/search.png) no-repeat center center white;
+	background: url(../img/search.png);
 	height: 30px;
 	width: 38px;
 	position: absolute;
 	right: 2px;
-	top: 9px;
+	top: 7px;
 	border: none;
 /*	border-left: 1px solid #dbdbdb;*/
 	cursor: pointer;

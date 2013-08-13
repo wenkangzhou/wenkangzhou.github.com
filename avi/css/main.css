@@ -1,4 +1,4 @@
-body {
+﻿body {
 	font-size:12px;
 	-webkit-user-select:none;
     -webkit-text-size-adjust:none;
@@ -43,7 +43,7 @@ a:hover{
 	height:45px;
 	line-height:45px;
 	background-color:#222;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #96FEAB), color-stop(0.05, #18D536), color-stop(1, #0F7B0A));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #d49f77), color-stop(0.05, #e19c61), color-stop(1, #7f2628));
 	padding:0;
 	color:#eee;
 	font-size:20px;
@@ -155,7 +155,7 @@ a:hover{
 	display: block;
 	width: 47px;
 	height: 26px;
-	background: #71b32b;
+	background: #e2906b;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	color: #ffffff;
@@ -174,10 +174,11 @@ a:hover{
 	bottom:0; left:0;
 	width:100%;
 	height:58px;
-	background-color:#222;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #96FEAB), color-stop(0.05, #18D536), color-stop(1, #0F7B0A));
+	background-color:#e5e3e2;
+	opacity: 0.5;
+	/*background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #e5e3e2), color-stop(0.05, #e2dad8), color-stop(1, #d9cac8));*/
 	padding:0;
-	border-top:1px solid #444;
+	border-top:1px solid #C0B8B8;
 }
 .foot-item{
 	margin: 3px 1% 3px 1%;
@@ -194,9 +195,10 @@ a:hover{
 }
 #footer span p {
 	width: 30%;
-	margin-top: 0px;
-	color: #c7c7c7;
-	position: absolute;
+margin-top: 0px;
+color: #7f2628;
+position: absolute;
+font-weight: bold;
 }
 /*弹出框*/
 .dhtmlx_modal_box {
@@ -341,7 +343,7 @@ a:hover{
 #search .search_inp_text-btn {
 	background: url(../img/search.png);
 	height: 30px;
-	width: 38px;
+	width: 34px;
 	position: absolute;
 	right: 2px;
 	top: 7px;

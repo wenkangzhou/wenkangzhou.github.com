@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>测试</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<link rel="stylesheet" href="css/base_style.css" type="text/css" />
+	<script src="js/jq.js"></script>
+<script type="text/javascript">
+
+function test_payMoeny(){
+	//window.myAndroidJs.initMobileMM();
+	var result = window.myAndroidJs.payMoeny('30000284175201','1');
+	alert(result);
+}
+
+function qrCodeResult(result){
+	
+	alert(result);
+}
+
+function errorPay(){
+	
+	alert("支付出错");
+}
+
+function uploading(picPath){
+	
+	$("#photo").attr("src",picPath);
+	alert("图片路径 : " + picPath + "  开始上传图片逻辑");
+	window.myAndroidJs.doUploadPhoto("{file:\"" + picPath + "\",url:\"" + "http://192.168.0.112/server/market?type=64&userId=1" + "\"}");
+}
+
+function uploadPhotoSuccess(){
+	
+	alert("上传图片成功了");
+}
+
+function uploadPhotoError(){
+	
+	alert("上传图片失败了");
+}
+
+</script>
+</head>
+<body>	
+
+<iframe height=498 width=510 src="http://player.youku.com/embed/XNTk0ODQ3MDg0" frameborder=0 allowfullscreen></iframe>
+<input type="button" value="发送短信" onclick="window.myAndroidJs.sendMessage('测试')"/>
+
+<input type="button" value="移动MM计费" onclick="window.myAndroidJs.payMoeny('30000284175201','1')"/>
+<!-- <input type="button" value="查询移动MM" onclick="window.myAndroidJs.payQuery('300002873462','')"/> -->
+<input type="button" value="注册摇一摇" onclick="window.myAndroidJs.registerYao()"/>
+<br/>
+<input type="button" value="注销摇一摇" onclick="window.myAndroidJs.unregisterYao()"/>
+<input type="button" value="获取手机号码" onclick="javascript:alert(window.myAndroidJs.getPhone())"/>
+<input type="button" value="获取运营商" onclick="javascript:alert(window.myAndroidJs.getProvidersName())"/>
+<br/>
+<input type="button" value="二维码" onclick="window.myAndroidJs.qrCode()"/>
+<input type="button" value="获取联系人" onclick="javascript:alert(window.myAndroidJs.getPhoneContactList())"/>
+<input type="button" value="打电话" onclick="window.myAndroidJs.callPhone(10086)"/>
+
+<input type="button" value="调用摄像头" onclick="window.myAndroidJs.goToCamera()"/>
+<input type="button" value="当前省" onclick="javascript:alert(window.myAndroidJs.getCurrentProvince())"/>
+<input type="button" value="当前市" onclick="javascript:alert(window.myAndroidJs.getCurrentCity())"/>
+<input type="button" value="当前街道" onclick="javascript:alert(window.myAndroidJs.getCurrentStreet())"/>
+
+<a href="404.html">404页面</a>
+
+<img id="photo" width="300" height="300">
+
+</body>
+</html>
+
+

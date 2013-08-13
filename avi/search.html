@@ -13,8 +13,8 @@
 <div id="header">
 	<div id="search">
 		<div class="search_inp_text">
-			<input type="text" id="search-text" class="search_inp_text-input" placeholder="从10万款应用中搜索">
-			<input type="submit" class="search_inp_text-btn"  value="">
+			<input type="text" id="search-text" class="search_inp_text-input" placeholder="从10万款应用中搜索"/>
+			<input type="submit" class="search_inp_text-btn"  value=""/>
 		</div>
 	</div>
 </div>
@@ -78,6 +78,7 @@ $(".search_inp_text-btn").bind('click', function(){
 	if(key == ""){
 		dhtmlx.alert("请输入搜索内容");
 	}
+	//搜索结果展现
 	// $("#scroller").html();
 });
 	

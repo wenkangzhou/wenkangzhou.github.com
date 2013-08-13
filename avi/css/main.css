@@ -43,7 +43,7 @@ a:hover{
 	height:45px;
 	line-height:45px;
 	background-color:#222;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #d49f77), color-stop(0.05, #e19c61), color-stop(1, #7f2628));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #d49f77), color-stop(0.05, #e19c61), color-stop(1, #B15A5B));
 	padding:0;
 	color:#eee;
 	font-size:20px;

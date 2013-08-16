@@ -288,7 +288,7 @@ a:hover{
 
 /*TAB*/
 .head_sub_tab{
-	margin-top: -4px;
+	margin-top: -1px;
 	overflow: hidden;
 	height: 38px;
 	line-height: 38px;
@@ -297,7 +297,12 @@ a:hover{
 .head_sub_tab li {
 	color: #595959;
 	float: left;
-	width: 33.33333%;
+	width: 34%;
+}
+.head_sub_tab li:last-child{
+	color: #595959;
+	float: left;
+	width: 34%;
 }
 .head_sub_tab li a {
 	display: block;

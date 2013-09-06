@@ -310,17 +310,17 @@
 			$(this).attr("src",temp);
 		}); 
         //ipad hack
-        if(y_ipad()==true){
-        	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr("margin-top","-25px")
+        if(y_ipad()){
+        	alert(1)
+        	alert($("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr())
+        	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr("margin-top","-25px");
+        	alert($("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr())
         }
 	}
 
 	function y_ipad(){
 	 	var ua = navigator.userAgent.toLowerCase();
-	 	var s;
-	 	alert(ua)
-	 	s = ua.match(/ipad/i);
-	 	if(s=="ipad")
+	 	if(u2.indexOf("ipad")>-1)
 	 	{
 	  		return true;
 	 	} else{

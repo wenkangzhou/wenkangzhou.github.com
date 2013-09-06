@@ -312,6 +312,5 @@
         //ipad hack
         if(navigator.userAgent.toLowerCase().indexOf("ipad")>-1){
         	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").css("margin-top","-45px");
-        	alert($("#songs .song-block .mejs-container .mejs-controls .mejs-play button").css("margin-top"))
         }
 	}

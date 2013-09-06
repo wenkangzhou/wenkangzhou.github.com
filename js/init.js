@@ -317,6 +317,7 @@
 
 	function y_ipad(){
 	 	var ua = navigator.userAgent.toLowerCase();
+alert(ua);
 	 	var s;
 	 	s = ua.match(/iPad/i);
 	 	if(s=="ipad")

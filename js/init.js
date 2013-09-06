@@ -310,7 +310,7 @@
 			$(this).attr("src",temp);
 		}); 
         //ipad hack
-        if(y_ipad==true){
+        if(y_ipad()==true){
         	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr("margin-top","-25px")
         }
 	}
@@ -319,6 +319,7 @@
 	 	var ua = navigator.userAgent.toLowerCase();
 alert(ua);
 	 	var s;
+	 	alert(ua)
 	 	s = ua.match(/iPad/i);
 	 	if(s=="ipad")
 	 	{

@@ -303,7 +303,11 @@
 	      }
 	    });
 
-	    // init photo
-
+	    // lazy load photo
+	    $(".lazy").each(function(){
+			var src=$(this).attr("src");
+			var temp=$(this).attr("data-original");
+			$(this).attr("src",temp);
+		}); 
       
 	}

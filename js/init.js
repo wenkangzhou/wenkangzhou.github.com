@@ -310,20 +310,11 @@
 			$(this).attr("src",temp);
 		}); 
         //ipad hack
-        if(y_ipad()){
+        alert(navigator.userAgent.toLowerCase().indexOf("ipad"))
+        if(navigator.userAgent.toLowerCase().indexOf("ipad")>-1){
         	alert(1)
         	alert($("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr())
         	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr("margin-top","-25px");
         	alert($("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr())
         }
-	}
-
-	function y_ipad(){
-	 	var ua = navigator.userAgent.toLowerCase();
-	 	if(u2.indexOf("ipad")>-1)
-	 	{
-	  		return true;
-	 	} else{
-	  		return false;
-	 	}
 	}

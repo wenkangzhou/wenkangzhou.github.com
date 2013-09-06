@@ -309,5 +309,20 @@
 			var temp=$(this).attr("data-original");
 			$(this).attr("src",temp);
 		}); 
-      
+        //ipad hack
+        if(y_ipad==true){
+        	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").attr("margin-top","-25px")
+        }
+	}
+
+	function y_ipad(){
+	 	var ua = navigator.userAgent.toLowerCase();
+	 	var s;
+	 	s = ua.match(/iPad/i);
+	 	if(s=="ipad")
+	 	{
+	  		return true;
+	 	} else{
+	  		return false;
+	 	}
 	}

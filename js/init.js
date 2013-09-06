@@ -310,11 +310,8 @@
 			$(this).attr("src",temp);
 		}); 
         //ipad hack
-        alert(navigator.userAgent.toLowerCase().indexOf("ipad"))
         if(navigator.userAgent.toLowerCase().indexOf("ipad")>-1){
-        	alert(1)
-        	alert($("#songs .song-block .mejs-container .mejs-controls .mejs-play button").css("margin-top"))
-        	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").css("margin-top","-25px");
+        	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").css("margin-top","-45px");
         	alert($("#songs .song-block .mejs-container .mejs-controls .mejs-play button").css("margin-top"))
         }
 	}

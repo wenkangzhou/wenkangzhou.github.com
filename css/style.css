@@ -1208,7 +1208,7 @@
 		line-height: 24px;
 		color: #333;
 		top: 40%;
-		width: 50%;
+		width: 56%;
 		padding: 4px;
 		font-weight: 700;
 		text-align: right;
@@ -1225,7 +1225,7 @@
 		line-height: 24px;
 		color: #333;
 		top: 30%;
-		width: 50%;
+		width: 44%;
 		padding: 4px;
 		font-weight: 700;
 		text-align: left;
@@ -1458,7 +1458,19 @@
 	{
 		-webkit-animation:infinite-spinning 1s infinite linear;-webkit-transform:translatez(0);
 	}
+	@media all and (max-width:1279px){
+		#songs{
+			width:979px;
+			margin:auto;
+		} 
+	}
 
+	@media all and (max-width:960px){
+		#songs{
+			width:735px;
+			margin:auto;
+		} 
+	}
 	@media all and (max-width:960px){
 		#songs{
 			width:735px;

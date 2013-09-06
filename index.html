@@ -1,73 +1,465 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+	<head>
+		<title>Jimmy Chou</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="周文康的个人网站" />
+		<meta name="keywords" content="周文康，JIMMY CHOU" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/avatar.jpg" >
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/mediaelement-and-player.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/ie9.css" />
+		</noscript>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Wenkangzhou.github.com : just a test." />
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	</head>
+	<body>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<!-- Header -->
+			<div id="header" class="skel-panels-fixed">
 
-    <title>hello world</title>
-  </head>
+				<div class="top">
 
-  <body>
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar64"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">JIMMY CHOU</h1>
+							<span class="byline">Java Programmer</span>
+						</div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/wenkangzhou">View on GitHub</a>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#about" id="about-link" class="skel-panels-ignoreHref">
+										<span class="icon icon-user">About Me</span>
+									</a>
+								</li>
+								<li>
+									<a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref">
+										<span class="icon icon-th">Portfolio</span>
+									</a>
+								</li>
+								<li>
+									<a href="#top" id="top-link" class="skel-panels-ignoreHref">
+										<span class="icon icon-heart">Hobby</span>
+									</a>
+								</li>
+								<li>
+									<a href="#contact" id="contact-link" class="skel-panels-ignoreHref">
+										<span class="icon icon-envelope">Contact</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						
+				</div>
+			
+			</div>
 
-          <h1 id="project_title">hello world</h1>
-          
-        </header>
-    </div>
-<div style="display:none">
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+		<!-- Main -->
+			<div id="main">
+				
+				<!-- About Me -->
+					<section id="about" class="one">
+						<div class="container">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+							<header>
+								<h2>About Me</h2>
+							</header>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+							<span class="big-avater"><img src="images/avater300.jpg" alt="" /></span>
+							
+							<p class="container-content">嗨，我叫周文康。现居上海，目前从事WebApp相关的开发工作。爱好音乐、摄影，宅、微胖、无肉不欢，爱上社交网站但又不爱社交，喜欢听闻八卦、小道消息，有一个教雅思、长不大的女朋友，我们正在一起努力，为了美好的明天。</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+						</div>
+					</section>
+					
+				<!-- Portfolio 作品集-->
+					<section id="portfolio" class="two">
+						<div class="container">
+					
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+						
+							<div class="row">
+								<div class="4u">
+									<article class="box">
+										<a href="download/lazyseagull.apk" target="_blank">
+											<span class="box-info-download"><span class="icon icon-download">download</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/LazySeagull" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full">
+											<img src="images/seagull.jpg" alt="海鸥" />
+										</a>
+										<h3>com.seagull</h3>
+										<p >每天与你分享一幅画、一首歌、一件商品。</p>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="box">
+										<a href="download/paitao.apk" target="_blank">
+											<span class="box-info-download"><span class="icon icon-download">download</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/paitao" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full"><img src="images/paitao.jpg" alt="拍淘" />
+										</a>
+										<h3>com.paitao</h3>
+										<p >一个致力于三四线城市的电商平台。</p>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="box">
+										<a href="download/xunbaoxiang.apk" target="_blank">
+											<span class="box-info-download"><span class="icon icon-download">download</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/xunbaoxiang" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full"><img src="images/xunbaoxiang.jpg" alt="寻宝箱" /></a>
+										<h3>com.market</h3>
+										<p >一个没有节操的皮包电子市场。</p>
+									</article>
+								</div>
+							</div>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+						</div>
+					</section>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+				<!-- Hobby -->
+					<section id="top" class="three">
+						<div class="container">
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+							<header>
+								<h2>Hobby</h2>
+							</header>
+							
+							<div class="container-type">音乐</div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+							<p>
+								<!-- music part -->
+								<div class="clearfix" id="songs">
+								  <!-- .song-block -->
+								    <div class="song-block">  
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_0" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio data-id="0" preload="none" src="download/寂寞难耐.mp3">
+								                <source  src="download/寂寞难耐.mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								            <img width="233" height="233" src="images/lzs_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">生命中的精灵</h5>
+								          <span class="br">-</span>
+								          <span class="br year">1986</span>
+								        </div>
+								      </div>     
+								    </div>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+								  <!-- .song-block -->  
+								    <div class="song-block">
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_1" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio data-id="1" preload="none" src="download/恋曲1980.mp3">
+								                <source src="download/恋曲1980.mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								          <img width="233" height="233" src="images/ldy_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">之乎者也</h5>
+								          <span class="br">-</span>
+								          <span class="br year">1982</span>
+								        </div>
+								      </div>     
+								    </div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+								    <!-- .song-block -->
+								    <div class="song-block">
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_2" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio data-id="2" preload="none" src="download/一无所有.mp3">
+								                <source src="download/一无所有.mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								          <img width="233" height="233" src="images/cj_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">一无所有</h5>
+								          <span class="br">-</span>
+								          <span class="br year">1989</span>
+								        </div>
+								      </div>     
+								    </div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+								    <!-- .song-block -->
+								    <div class="song-block">
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_3" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio  data-id="3" preload="none" src="download/牡丹亭外.mp3">
+								                <source src="download/牡丹亭外.mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								          <img width="233" height="233" src="images/cs_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">美丽的邂逅</h5>
+								          <span class="br">-</span>
+								          <span class="br year">2008</span>
+								        </div>
+								      </div>     
+								    </div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+								    <!-- .song-block -->
+								    <div class="song-block">
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_4" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio  data-id="4" preload="none" src="download/揪心的玩笑与漫长的白日梦.mp3">
+								                <source src="download/揪心的玩笑与漫长的白日梦.mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								          <img width="233" height="233" src="images/wq_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">万能青年旅店</h5>
+								          <span class="br">-</span>
+								          <span class="br year">2010</span>
+								        </div>
+								      </div>     
+								    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-</div>
-    
+								    <!-- .song-block -->
+								    <div class="song-block">
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_5" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio  data-id="5" preload="none" src="download/闹海.mp3">
+								                <source src="download/闹海.mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								          <img width="233" height="233" src="images/nezha_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">哪吒</h5>
+								          <span class="br">-</span>
+								          <span class="br year">2008</span>
+								        </div>
+								      </div>     
+								    </div>
 
-  </body>
+								    <!-- .song-block -->
+								    <div class="song-block">
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_6" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio  data-id="6" preload="none" src="download/米店.mp3">
+								                <source src="download/米店.mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								          <img width="233" height="233" src="images/zww_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">你等着我回来</h5>
+								          <span class="br">-</span>
+								          <span class="br year">2008</span>
+								        </div>
+								      </div>     
+								    </div>
+
+								    <!-- .song-block -->
+								    <div class="song-block">
+								      <div class="shadow"></div>
+								      <div class="top-layer">
+								        <div id="mep_7" class="mejs-container mejs-audio">
+								          <div class="mejs-inner">
+								            <div class="mejs-mediaelement">
+								              <audio  data-id="7" preload="none" src="download/你离开了南京,从此没有人和我说话(乐曲).mp3">
+								                <source src="download/你离开了南京,从此没有人和我说话(乐曲).mp3" type="audio/mpeg">
+								              </audio>
+								            </div>
+								            <div class="mejs-clear"></div>
+								          </div>
+								        </div>         
+								        <div class="cover">
+								          <img width="233" height="233" src="images/lz_233.jpg" class="album-cover wp-post-image">
+								        </div>
+								        <div class="mask"></div>
+								        <div class="dots"></div>
+								        <div class="desc">
+								          <h5 itemprop="name">梵高先生</h5>
+								          <span class="br">-</span>
+								          <span class="br year">2007</span>
+								        </div>
+								      </div>     
+								    </div>
+								</div>
+
+							</p>
+
+							<div class="container-type">摄影</div>
+
+							<p>
+								<!-- photo part -->
+								<div class="row">
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+									<div class="4u">
+										<span class="image image-full image-boder"><img src="images/test.jpg" alt=""></span>
+									</div>
+								</div>
+							</p>
+
+						</div>
+
+					</section>
+			
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+							<p>
+								<h2>Find me on......</h2>
+							</p>
+							<p>
+								<a href="http://weibo.com/koudaix700/" target="_blank">
+									<img src="images/sina.png" alt="新浪微博" />
+								</a>
+								<a href="http://www.zhihu.com/people/kou-dai/" target="_blank">
+									<img src="images/zhihu.png" alt="知乎" />
+								</a>
+								<a href="http://www.douban.com/people/koudaix700/" target="_blank">
+									<img src="images/douban.png" alt="豆瓣" />
+								</a>
+								<a href="https://github.com/wenkangzhou/" target="_blank">
+									<img src="images/github.png" alt="Gitbub" />
+								</a>
+								<a href="http://instagram.com/xiaopan20062007/" target="_blank">
+									<img src="images/instagram.png" alt="Instagram" />
+								</a>
+								<a href="mailto:koudaix700@gmail.com">
+									<img src="images/gmail.png" alt="Email" />
+								</a>
+							</p>
+							
+						</div>
+					</section>
+			
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				
+				<!-- Copyright -->
+					<div class="copyright">
+						<p>Copyright © JIMMY CHOU. All Rights Reserved.</p>
+						<ul class="menu">
+							<li>The  template designed by <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+						</ul>
+					</div>
+				
+			</div>
+
+	</body>
 </html>

@@ -310,7 +310,7 @@
 			$(this).attr("src",temp);
 		}); 
         //ipad hack
-        if(navigator.userAgent.toLowerCase().indexOf("ipad")>-1){
+        if(navigator.userAgent.toLowerCase().indexOf("ipad")>-1||navigator.userAgent.toLowerCase().indexOf("iphone")>-1){
         	$("#songs .song-block .mejs-container .mejs-controls .mejs-play button").css("margin-top","-45px");
         }
 	}

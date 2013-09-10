@@ -288,8 +288,6 @@
 	        var $cover = $(node).closest('.song-block').find('.album-cover');
 	      
 	        media.addEventListener('play', function(e) {
-	          e.preventDefault();
-	          alert(11)
 	          var seq = $(this).attr("data-id");
           	  $("#mep_"+seq).find(".mejs-play").hide();
 	          $cover.addClass('spin');

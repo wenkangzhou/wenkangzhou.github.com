@@ -310,7 +310,7 @@ mejs.MediaFeatures = {
 			i,
 			v,
 			html5Elements = ['source','track','audio','video'];
-		alert(ua)
+
 		// detect browsers (only the ones that have some kind of quirk we need to work around)
 		t.isiPad = (ua.match(/ipad/i) !== null);
 		t.isiPhone = (ua.match(/iphone/i) !== null);
@@ -2145,11 +2145,11 @@ if (typeof jQuery != 'undefined') {
 			} else {
 				t.isVideo = (tagName !== 'audio' && t.options.isVideo);
 			}
-			alert(mf.isiPad+"##"+mf.isiPhone+"#"+iPadUseNativeControls)
-
+			alert(1)
 			// use native controls in iPad, iPhone, and Android
+			alert(mf.isiPad+"#"+t.options.iPadUseNativeControls+"#"+mf.isiPhone)
 			if ((mf.isiPad) || (mf.isiPhone && t.options.iPhoneUseNativeControls)) {
-				alet(1)
+				alert(3)
 				// add controls and stop
 				t.$media.attr('controls', 'controls');
 
@@ -2159,9 +2159,8 @@ if (typeof jQuery != 'undefined') {
 
 				// override Apple's autoplay override for iPads
 				if (mf.isiPad && t.media.getAttribute('autoplay') !== null) {
-					alert(2)
-					//t.media.load();
-					//t.media.play();
+					t.media.load();
+					t.media.play();
 				}
 
 			} else if (mf.isAndroid && t.options.AndroidUseNativeControls) {
@@ -2200,7 +2199,7 @@ if (typeof jQuery != 'undefined') {
 
 				// move the <video/video> tag into the right spot
 				if (mf.isiOS) {
-					alert(3)
+
 					// sadly, you can't move nodes in iOS, so we have to destroy and recreate it!
 					var $newMedia = t.$media.clone();
 

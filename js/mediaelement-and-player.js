@@ -2149,10 +2149,20 @@ if (typeof jQuery != 'undefined') {
 			// use native controls in iPad, iPhone, and Android
 			alert(mf.isiPad+"#"+t.options.iPadUseNativeControls+"#"+mf.isiPhone)
 			if ((mf.isiPad) || (mf.isiPhone && t.options.iPhoneUseNativeControls)) {
-				alert(3)
+				alert(4)
 				// add controls and stop
 				t.$media.attr('controls', 'controls');
-
+t.container =
+					$('<div id="' + t.id + '" class="mejs-container ' + (mejs.MediaFeatures.svg ? 'svg' : 'no-svg') + '">'+
+						'<div class="mejs-inner">'+
+							'<div class="mejs-mediaelement"></div>'+
+							'<div class="mejs-layers"></div>'+
+							'<div class="mejs-controls"></div>'+
+							'<div class="mejs-clear"></div>'+
+						'</div>' +
+					'</div>')
+					.addClass(t.$media[0].className)
+					.insertBefore(t.$media);
 				// attempt to fix iOS 3 bug
 				//t.$media.removeAttr('poster');
                                 // no Issue found on iOS3 -ttroxell

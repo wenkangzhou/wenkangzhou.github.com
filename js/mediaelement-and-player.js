@@ -1976,9 +1976,9 @@ if (typeof jQuery != 'undefined') {
         // Enable click video element to toggle play/pause
         clickToPlayPause: true,
 		// force iPad's native controls
-		iPadUseNativeControls: true,
+		iPadUseNativeControls: false,
 		// force iPhone's native controls
-		iPhoneUseNativeControls: true,
+		iPhoneUseNativeControls: false,
 		// force Android's native controls
 		AndroidUseNativeControls: false,
 		// features to show
@@ -2145,9 +2145,10 @@ if (typeof jQuery != 'undefined') {
 			} else {
 				t.isVideo = (tagName !== 'audio' && t.options.isVideo);
 			}
+			alert(mf.isiPad+"##"+mf.isiPhone+"#"+iPadUseNativeControls)
 
 			// use native controls in iPad, iPhone, and Android
-			if ((mf.isiPad && t.options.iPadUseNativeControls) || (mf.isiPhone && t.options.iPhoneUseNativeControls)) {
+			if ((mf.isiPad) || (mf.isiPhone && t.options.iPhoneUseNativeControls)) {
 				alet(1)
 				// add controls and stop
 				t.$media.attr('controls', 'controls');

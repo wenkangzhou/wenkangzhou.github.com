@@ -1976,9 +1976,9 @@ if (typeof jQuery != 'undefined') {
         // Enable click video element to toggle play/pause
         clickToPlayPause: true,
 		// force iPad's native controls
-		iPadUseNativeControls: false,
+		iPadUseNativeControls: true,
 		// force iPhone's native controls
-		iPhoneUseNativeControls: false,
+		iPhoneUseNativeControls: true,
 		// force Android's native controls
 		AndroidUseNativeControls: false,
 		// features to show

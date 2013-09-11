@@ -2145,24 +2145,13 @@ if (typeof jQuery != 'undefined') {
 			} else {
 				t.isVideo = (tagName !== 'audio' && t.options.isVideo);
 			}
-			alert(1)
+
 			// use native controls in iPad, iPhone, and Android
-			alert(mf.isiPad+"#"+t.options.iPadUseNativeControls+"#"+mf.isiPhone)
-			if ((mf.isiPad) || (mf.isiPhone && t.options.iPhoneUseNativeControls)) {
-				alert(4)
+			if ((mf.isiPad && t.options.iPadUseNativeControls) || (mf.isiPhone && t.options.iPhoneUseNativeControls)) {
+
 				// add controls and stop
 				t.$media.attr('controls', 'controls');
-t.container =
-					$('<div id="' + t.id + '" class="mejs-container ' + (mejs.MediaFeatures.svg ? 'svg' : 'no-svg') + '">'+
-						'<div class="mejs-inner">'+
-							'<div class="mejs-mediaelement"></div>'+
-							'<div class="mejs-layers"></div>'+
-							'<div class="mejs-controls"></div>'+
-							'<div class="mejs-clear"></div>'+
-						'</div>' +
-					'</div>')
-					.addClass(t.$media[0].className)
-					.insertBefore(t.$media);
+
 				// attempt to fix iOS 3 bug
 				//t.$media.removeAttr('poster');
                                 // no Issue found on iOS3 -ttroxell
@@ -2209,7 +2198,7 @@ t.container =
 
 				// move the <video/video> tag into the right spot
 				if (mf.isiOS) {
-
+					alert(t.container)
 					// sadly, you can't move nodes in iOS, so we have to destroy and recreate it!
 					var $newMedia = t.$media.clone();
 
@@ -2241,7 +2230,7 @@ t.container =
 				var tagType = (t.isVideo ? 'video' : 'audio'),
 					capsTagName = tagType.substring(0,1).toUpperCase() + tagType.substring(1);
 
-
+					alert(tagType)
 				if (t.options[tagType + 'Width'] > 0 || t.options[tagType + 'Width'].toString().indexOf('%') > -1) {
 					t.width = t.options[tagType + 'Width'];
 				} else if (t.media.style.width !== '' && t.media.style.width !== null) {

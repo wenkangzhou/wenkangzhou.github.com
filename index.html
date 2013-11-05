@@ -7,24 +7,18 @@
 		<meta name="keywords" content="周文康，JIMMY CHOU" />
 		<link rel="shortcut icon" type="image/x-icon" href="images/avatar.jpg" >
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-		<script src="js/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/mediaelement-and-player.min.js"></script>
-		<script src="js/init.js"></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-wide.css" />
 			<link rel="stylesheet" href="css/ie9.css" />
 		</noscript>
-
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<!-- 我知道js写在底部好啊，但是这里有点特殊 -->
+		<script src="js/skel.min.js"></script>
 	</head>
 	<body>
-
 		<!-- Header -->
 			<div id="header" class="skel-panels-fixed">
 
@@ -72,18 +66,43 @@
 				
 				<!-- About Me -->
 					<section id="about" class="one">
+
 						<div class="container">
-							<a id="forkme_banner" href="https://github.com/wenkangzhou/wenkangzhou.github.com" target="_blank">View on GitHub</a>
+
+							<div class="container-tips">
+								请尽量使用<a href="https://www.google.com/intl/zh-CN/chrome/browser/" target="_blank">Chrome</a>、
+								<a href="http://extensions.apple.com/" target="_blank">Safari</a>等现代浏览器，以达到最佳体验。
+								<a class="container-close" href="javascript:$('.container-tips').hide();"></a>
+							</div>
+
+							<a id="forkme_banner" href="https://github.com/wenkangzhou/wenkangzhou.github.com" target="_blank">
+								View on GitHub
+							</a>
+
 							<header>
 								<h2>About Me</h2>
 							</header>
 
 							<span class="big-avater">
-								<img class="lazy" src="images/lazy.gif" data-original="images/avater300.jpg" />
+<!-- 								<a href="download/resume.html" target="_blank">
+									<img class="lazy" onsrc="images/lazy.gif" data-original="images/avater300.jpg" />
+								</a> -->
+								<section class="Qcontainer">
+								    <div class="film">
+								        <div class="face front">
+								        	<img class="lazy" onsrc="images/lazy.gif" data-original="images/avater300.jpg">
+								        </div>
+								        <div class="face back">
+								        	<h5>
+								        		<a href="download/resume.html" target="_blank">
+								        			我的简历
+								        		</a>
+								        	</h5>
+								        </div>
+								    </div>
+								</section>
 							</span>
-							
-							<p class="container-content">嗨，我叫周文康。现居上海，目前从事WebApp相关的开发工作。爱好音乐、摄影，宅、微胖、无肉不欢，爱上社交网站但又不爱社交，喜欢听闻八卦、小道消息，有一个教雅思、长不大的女朋友，我们正在一起努力，为了美好的明天。</p>
-
+							<p class="container-content">嗨，我叫周文康。现居上海，目前从事WebApp相关的开发工作。爱好音乐、摄影，宅、微胖、无肉不欢，爱上社交网站但又不爱社交，喜欢听闻八卦、小道消息，有一个教雅思、长不大的<a href="http://lynneliu.com/" target="_blank">女朋友</a>，我们正在一起努力，为了美好的明天。</p>
 						</div>
 					</section>
 					
@@ -139,6 +158,102 @@
 										</a>
 										<h3>com.market</h3>
 										<p >一个没节操、跟风、无趣的皮包电子市场。</p>
+									</article>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="4u">
+									<article class="box">
+										<a href="http://lazyseagull.com/myPortfolio/admin/index.html" target="_blank">
+											<span class="box-info-download"><span class="icon icon-home">demo</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/JimmyAdmin/tree/master/admin" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full">
+										    <img class="lazy" src="images/lazy.gif" data-original="images/bootstrapAdmin.jpg" alt="基于bootstrap的后台模板"/>
+										</a>
+										<h3>bootstrapAdmin</h3>
+										<p >一个基于bootstrap的后台模板。</p>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="box">
+										<a href="http://t.cn/zRCXIdi" target="_blank">
+											<span class="box-info-download"><span class="icon icon-download">install</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/toutouxia/tree/master/src" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full">
+											<img class="lazy" src="images/lazy.gif" data-original="images/toutouxia.jpg" alt="偷偷下"/>
+										</a>
+										<h3>toutouxia</h3>
+										<p >一个监听音乐下载链接的chrome插件。</p>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="box">
+										<a href="download/诞客网络科技前端规范文档V1.1.rar" target="_blank">
+											<span class="box-info-download"><span class="icon icon-download">download</span></span> 
+										</a>
+										<a href="download/诞客网络科技前端规范文档V1.1.pdf" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-book">view</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full">
+											<img class="lazy" src="images/lazy.gif" data-original="images/frontenddoc.jpg"  alt="前端文档" />
+										</a>
+										<h3>frontend Doc</h3>
+										<p >内容来源于书籍、网络，将持续更新改进。</p>
+									</article>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="4u">
+									<article class="box">
+										<a href="download/bdj.apk" target="_blank">
+											<span class="box-info-download"><span class="icon icon-download">download</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/bdj" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full">
+										    <img class="lazy" src="images/lazy.gif" data-original="images/bdj.jpg" alt="寻吐槽"/>
+										</a>
+										<h3>bdj(demo)</h3>
+										<p >一个定位于吐槽的段子平台。</p>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="box">
+										<a href="download/temaila.apk" target="_blank">
+											<span class="box-info-download"><span class="icon icon-download">download</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/temaila" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full">
+											<img class="lazy" src="images/lazy.gif" data-original="images/temaila.jpg" alt="特卖啦"/>
+										</a>
+										<h3>temaila(demo)</h3>
+										<p >一个webapp的模板项目。</p>
+									</article>
+								</div>
+								<div class="4u">
+									<article class="box">
+										<a href="http://m.paitao.com/" target="_blank">
+											<span class="box-info-download"><span class="icon icon-home">demo</span></span> 
+										</a>
+										<a href="https://github.com/wenkangzhou/wappaitao" target="_blank">
+											<span class="box-info-fork"><span class="icon icon-github-sign">fork</span></span> 
+										</a>
+										<a href="javascript:void()" class="image full">
+											<img class="lazy" src="images/lazy.gif" data-original="images/wappaitao.jpg"  alt="wap拍淘" />
+										</a>
+										<h3>wap.paitao</h3>
+										<p >即将上线的新版wap拍淘。</p>
 									</article>
 								</div>
 							</div>
@@ -560,6 +675,11 @@
 					</div>
 				
 			</div>
-
+		<!-- Script -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/skel-panels.min.js"></script>
+			<script src="js/mediaelement-and-player.min.js"></script>
+			<script src="js/init.js"></script>
+			<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 	</body>
 </html>

@@ -264,7 +264,11 @@
 
 	// expand
 	function myJs() {
-		console.log("{\"plan\": [{\"todo\": \"图片优化\"},{\"todo\": \"Github同步最新拍掏代码\"}],\"hope\": \"一个有趣靠谱的移动互联网公司\"}");
+		try{
+			console.log("{\"plan\": [{\"todo\": \"图片优化\"},{\"todo\": \"Github同步最新拍掏代码\"}],\"hope\": \"一个有趣靠谱的移动互联网公司\"}");
+		}catch(e){
+
+		};
 		$(".container p img").hover(function() {
 				$(".container p img").addClass("fadeout");
 				$(this).addClass("showbox").removeClass("fadeout");

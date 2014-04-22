@@ -264,8 +264,7 @@
 
 	// expand
 	function myJs() {
-		
-		console.log("%c ", "background:url('http://yiquwei.com/images/loadingcd.gif')");
+		console.log("%c  ", "font-size:31px;background:url('http://yiquwei.com/images/loadingcd.gif')");
         console.log("控制台也可以是彩色的，看这里➸%c绿色", "color:green;font-weight:bold;");
 
 		$(".container p img").hover(function() {

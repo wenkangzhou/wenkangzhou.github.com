@@ -264,11 +264,10 @@
 
 	// expand
 	function myJs() {
-		try{
-			console.log("{\"plan\": [{\"todo\": \"图片优化\"},{\"todo\": \"Github同步最新拍掏代码\"}],\"hope\": \"一个有趣靠谱的移动互联网公司\"}");
-		}catch(e){
+		
+		console.log("%c ", "background:url('http://yiquwei.com/images/loadingcd.gif')");
+        console.log("控制台也可以是彩色的，看这里➸%c绿色", "color:green;font-weight:bold;");
 
-		};
 		$(".container p img").hover(function() {
 				$(".container p img").addClass("fadeout");
 				$(this).addClass("showbox").removeClass("fadeout");
